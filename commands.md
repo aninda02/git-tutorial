@@ -79,3 +79,39 @@
 - **View command history**:
   
   `history`
+
+## 9. Git push using ssh and clone
+- **To clone a file in local from remote**:
+
+  `git clone https://github.com/aninda02/git-tutorial.git`
+
+- **To make changes in local and push it to remote**:
+
+  - Create a file in local (ex: README.md)
+  - Add it to git using : git add README.md
+  - Commit the changes to git: git commit -m "to add the changes"
+  - Push the changes using: git push 
+  - Now at this point, you would be required to enter the git username and password, and the changes would be reflected.
+
+## 9. Git push without using username and password
+
+**Step 1**:
+
+  `git remote -v` - This command would give the output of push and fetch url
+  `git remote set-url origin https://<token id>@github.com/aninda02/git-tutorial.git`
+  `git push`
+
+**Step 2**:
+
+  `git remote -v` - This command would give the output of push and fetch url
+
+   **Generate ssh keys**:
+   - cd .ssh
+   - ssh-keygen
+   - Copy the public key (<hostname>.pub) and go to your github repository
+   - Go to Settings --> SSH and GPG keys --> New SSH key --> Paste your public key
+
+   **Git push with ssh**:
+
+  `git remote set-url origin git@github.com:aninda02/git-tutorial.git`
+  `git push`
