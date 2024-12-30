@@ -115,3 +115,8 @@
 
   `git remote set-url origin git@github.com:aninda02/git-tutorial.git`
   `git push`
+
+## 10. To pull changes into local from remote
+
+   `git pull origin main`
+  
