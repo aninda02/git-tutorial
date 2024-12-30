@@ -6,3 +6,4 @@ Includes:
 
 - Commands
 - Topics
+- Videos
