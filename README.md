@@ -1,3 +1,8 @@
-#Git for DevOps
+# Git for DevOps
 
 This repository is for learning git commands.
+
+Includes:
+
+- Commands
+- Topics
